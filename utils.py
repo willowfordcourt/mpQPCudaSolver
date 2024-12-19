@@ -96,6 +96,7 @@ def compute_critical_region(A, b, c, H, inv_Q, F, CRA, CRb, active_set):
         "active_set": active_set
     }
 
+
 def process_active_set(args):
     A, b, c, H, Q, F, CRA, CRb, active_set = args
     return compute_critical_region(A, b, c, H, Q, F, CRA, CRb, active_set)
@@ -124,7 +125,6 @@ def active_sets_to_regions_parallel(prog, all_active_sets):
     return solution
 
 
-##############################################
 def active_sets_to_regions(prog, all_active_sets):
     A, b, c, H, Q, F, CRA, CRb = prog.A, prog.b, prog.c, prog.H, prog.inv_Q, prog.F, prog.A_t, prog.b_t
 

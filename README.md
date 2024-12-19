@@ -3,7 +3,6 @@
 ## Overview
 
 This repository contains the code for our GPU-based multiparametric Quadratic Programming (mpQP) solver. The solver is optimised for NVIDIA GPUs, particularly the RTX 4090. It significantly accelerates feasibility and optimality checks for active sets in mpQP and mpLP problems, leveraging advanced parallel combinatorial algorithms and basis-sharing techniques. For a detailed description of the algorithm and its performance, please refer to our accompanying paper.
-
 ![Algorithm Performance](./algorithms_performance_len62.png)
 
 ## Installation
