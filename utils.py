@@ -15,9 +15,6 @@ from gurobipy import GRB
 from multiprocessing import Pool
 
 
-
-
-
 def scale_constraint(A, b):
     norm_val = 1.0 / np.linalg.norm(A, axis=1, keepdims=True)
     return [A * norm_val, b * norm_val]
